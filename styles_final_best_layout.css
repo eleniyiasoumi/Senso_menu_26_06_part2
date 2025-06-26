@@ -1,0 +1,210 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(4px);
+  margin: 0;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#senso-logo {
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+}
+
+#language-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;       
+  width: auto !important;      
+}
+
+
+
+main {
+  padding: 1.2rem;
+}
+
+h2, h3, h4 {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+#categories, #subcategories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#categories button,
+#subcategories button,
+#products > button,
+button {
+  font-size: 1.2rem;
+  background-color: rgba(100, 100, 100, 0.80);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2rem 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 90%;
+  max-width: 340px;
+  margin: 0rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+button:hover {
+  background-color: rgba(0,0,0,0.65);
+  transform: scale(1.03);
+}
+
+.menu-item {
+  background-color: rgba(100, 100, 100, 0.6); 
+  border-radius: 30px;
+  padding: 1rem 1.2rem;
+  margin: 0.3rem auto;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+
+.menu-item div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item strong {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.menu-item small {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 0.3rem;
+}
+
+.menu-item span {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-item {
+    flex-direction: row;
+    text-align: left;
+    padding: 0.8rem;
+    height: auto;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .menu-item img {
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+  }
+
+  .menu-item div {
+    align-items: flex-start;
+  }
+
+  .menu-item strong {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .menu-item small {
+    font-size: 0.65rem;
+    line-height: 0.85rem;
+  }
+
+  .menu-item span {
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+  }
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#products > button {
+  display: block;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.handwritten-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+
